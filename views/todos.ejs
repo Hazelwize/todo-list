@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Your To-Do List</h1>
+    <p>Please feel free to add, manage, and delete tasks as you complete them.</p>
+    <section>
+        <ul>
+            <% todos.forEach(e => { %>
+                <li class="item" data-id="<%=e._id%>">
+                    <span><%= e.todo %></span>
+                </li>
+            <%})%>
+        </ul>
+        <p>Number of Tasks Left To Do :  "<%=left%>"</p>
+    </section>
+    <form action="/todos/createTodo" method="POST">
+        <input type="text" name="todoItem">
+        <button type="submit">Add To-Do</button>
+    </form>
+    
+</body>
+</html>
