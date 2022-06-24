@@ -1,0 +1,9 @@
+.done{
+    text-decoration: line-through;
+}
+.not{
+    text-decoration: underline;
+}
+span{
+    cursor: pointer;
+}

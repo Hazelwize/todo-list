@@ -24,10 +24,11 @@ module.exports = {
         }
     },
     deleteTodo: async(req,res) =>{
+        console.log(req.body.id)
         try{
-            await Todo.findOneAndDelete({_id: req.body.todoId})
+            await Todo.findOneAndDelete({_id: req.body.id})
             console.log('todo was deleted')
-            res.redirect('/todos')
+            res.json('todo was deleted')
         }
         catch(err){
             console.log(err)
@@ -35,7 +36,17 @@ module.exports = {
     },
     markCompleted: async(req,res)=>{
         try{
-            await Todo.findOneAndUpdate({_id:req.body.todoId},{completed: true})
+            await Todo.findOneAndUpdate({_id:req.body.id},{completed: true})
+            console.log('marked complete')
+            res.json('marked complete')
+        }
+        catch(err){
+            console.log(err)
+        }
+    },
+    markIncomplete: async(req,res)=>{
+        try{
+            await Todo.findOneAndUpdate({_id:req.body.id},{completed: false})
             console.log('marked complete')
             res.json('marked complete')
         }
