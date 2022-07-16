@@ -21,7 +21,7 @@ Take a look at these couple examples that I have in my own portfolio:
 
 **Stitch-N-Loop API:** https://github.com/Hazelwize/stitch-and-loop-api
 
-**Amiibo Site:**https://github.com/Hazelwize/Amiibo_Site
+**Amiibo Site:** https://github.com/Hazelwize/Amiibo_Site
 
 
 
