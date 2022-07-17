@@ -15,7 +15,7 @@ I would like to go back and add React as the front-end framework. It would take 
 This project helped me understand the importance of using unique identifiers for all of your rendered items. Having a Schema really is the way to go for organization. I can see this really coming in handy for future projects that are more complex and using multiple collections or databases. 
 
 ## Examples:
-Take a look at these couple examples that I have in my own portfolio:
+Take a look at these examples that I have in my own portfolio:
 
 **PlayerToo:** https://github.com/Hazelwize/player-two
 
